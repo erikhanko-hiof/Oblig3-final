@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inkluderer en stilark for normalisering for å sikre at nettstedet ser likt ut på alle nettlesere -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <!-- Inkluderer ikon-stiler for ikoner fra FontAwesome -->
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <!-- Inkluderer nettstedets egen stilark -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>ShoeShop</title>
+</head>
+<body>
+    <!-- Hovedbeholderen for nettstedet -->
+    <div id="grid-container">
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <!-- Navigasjonsmeny med lenker -->
+                    <li><a href="index.html"><i class="fa-solid fa-store"></i></a></li>
+                    <li><a style="padding-left:60px;" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a style="padding-left:60px;" href="about.html"><i class="fa-solid fa-circle-question"></i></a></li>
+                </ul>
+                
+                <ul class="navbar">
+                    <!-- Navigasjonsmeny med lenker -->
+                    <li><a href="index.html">Sko</a></li>
+                    <li><a href="cart.html">Handlekurv</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="cart">
+                <article>
+                    <h1>Handlekurv</h1>
+                    <hr>
+                    <img src="./img/shoe1.png" style="width:120px; height:auto" alt="converse sko"><a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    <h3>299 kr</h3>
+                    <hr>
+                    <img src="./img/shoe2.png" style="width:120px; height:auto" alt="høyhælte sko"><a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    <h4>399 kr</h4>
+                    <hr>
+                    <h2>Totalsum: 698 nok</h2>
+                    <hr>
+                    <button>Betal med vipps!</button>
+                </article>
+            </section>
+
+            <section id="cart-desktop">
+                <article>
+                    <h1>Handlekurv</h1>
+                    <section class="sko">
+                        <h3>Converse</h3>
+                        <img src="./img/shoe1.png" style="width:120px; height:auto" alt="converse sko">
+                        <h4>299 kr</h4>
+                        <button>Fjern!</button>
+                    </section>
+                    <section class="sko">
+                        <h3>Valentino Garavani</h3>
+                        <img src="./img/shoe2.png" style="width:120px; height:auto" alt="høyhælte sko">
+                        <h4>399 kr</h4>
+                        <button>Fjern!</button>
+                    </section>
+                    <br>
+                    <br>
+                    <hr>
+                    <section class="betal">
+                        <h3>TOTALSUM: 698 kr</h3>
+                    </section>
+                    <section class="betal">
+                        <button>BETAL NÅ</button>
+                    </section>
+                </article>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>

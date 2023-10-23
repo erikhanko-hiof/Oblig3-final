@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inkluderer en stilark for normalisering for å sikre at nettstedet ser likt ut på alle nettlesere -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <!-- Inkluderer ikon-stiler for ikoner fra FontAwesome -->
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <!-- Inkluderer nettstedets egen stilark -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>ShoeShop</title>
+</head>
+<body>
+    <!-- Hovedbeholderen for nettstedet -->
+    <div id="grid-container">
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <!-- Navigasjonsmeny med lenker -->
+                    <li><a href="index.html"><i class="fa-solid fa-store"></i></a></li>
+                    <li><a style="padding-left:60px;" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a style="padding-left:60px;" href="about.html"><i class="fa-solid fa-circle-question"></i></a></li>
+                </ul>
+                
+                <ul class="navbar">
+                    <!-- Navigasjonsmeny med lenker -->
+                    <li><a href="index.html">Sko</a></li>
+                    <li><a href="cart.html">Handlekurv</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Seksjon 1 med en overskrift og en beskrivelse -->
+            <section class="flex-section">
+                <img src="./img/shoe1.png" alt="converse sko">
+                <section>
+                    <h2>Converse</h2>
+                    <p>Kjempe gode og kule sko!</p>
+                    <form action="cart.html"><button>Legg til i handlekurven!</button></form>
+                </section>    
+            </section>
+            <br>
+            <!-- Seksjon 2 med en overskrift og en beskrivelse (denne er høyrejustert) -->
+            <section class="flex-section right">
+                <img src="./img/shoe2.png" alt="høyhælte sko">
+                <section>
+                    <h2>Valentino Garavani</h2>
+                    <p>Elegante og fancy høyhælte sko!</p>
+                    <form action="cart.html"><button>Legg til i handlekurven!</button></form>
+                </section>
+            </section>
+            <br>
+            <!-- Seksjon 3 for tjenester med flere artikler -->
+            <section id="services">
+                <article>
+                    <h2>Om oss</h2>
+                    <p>Vi er et lite firma som spesialiserer oss innenfor sjeldne sko. Du kan lese mer <a style="text-decoration: underline;" href="about.html">her</a>.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

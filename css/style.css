@@ -1,0 +1,307 @@
+/* Setter standard skrifttype for hele nettsiden */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Definerer et grid-container som inneholder header, main og footer */
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/* Legger til litt padding til header, main og footer for mellomrom */
+header, main, footer {
+    padding: 1rem;
+}
+
+/* Styler header-seksjonen */
+header {
+    font-size: 250%;
+    font-weight: 600;
+    grid-area: header;
+    text-align: center;
+    position: relative;
+    padding-left: 0;
+    width: 100%;
+}
+
+/* Gjør navigasjonselementene i header til flexbokser som er justert mellomrom */
+header nav {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(174, 174, 174);
+    border: solid;
+    border-color: black;
+    padding: 0 10% 0 10%;
+}
+
+.topnav a {
+    color: #282828;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.topnav {
+    display: inline-flex;
+    list-style: none;
+    margin: 2.5%;
+    padding-left: 0%;
+}
+
+/* Skjuler standard navigasjonsmeny */
+.navbar {
+    display: none;
+}
+
+/* Styler main-seksjonen i gridet */
+main {
+    grid-area: main;
+}
+
+main section {
+    justify-content: center;
+    text-align: center;
+}
+
+main section button {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #222222;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+main section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main section a:hover {
+    text-decoration:none;
+}
+
+/* Setter bredden til bilder inni main-seksjonen til 100% */
+main section img {
+    width: 100%;
+}
+
+/* Styler footer-seksjonen i gridet */
+footer {
+    grid-area: footer;
+}
+
+#cart-desktop {
+    display: none;
+}
+
+#cart {
+    display: flex;
+    background-color: #efefef;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart img {
+    width: auto;
+}
+
+#cart a {
+    text-decoration: none;
+    color:#222222;
+    font-size: 400%;
+    align-items: center;
+}
+
+#cart button {
+    background-color: #ffb649;
+    color: #000000;
+}
+
+#about-desktop {
+    display:none;
+}
+
+#about {
+    display: flex;
+    background-color: #efefef;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+#about button {
+    background-color: #5bff49;
+    color: #000000;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+/* Styler tjeneste-seksjonen med flexbokser og bakgrunnsfarge */
+#services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #efefef;
+    padding: 1rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#services a {
+    color: inherit;
+}
+
+#services h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#services article {
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+/* Mediestørrelsesregel for skjermer som er bredere enn 600px */
+@media only screen and (min-width: 600px) {
+    /* Endrer grid-malen for bredere skjermer */
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    /* Viser den skjulte navigasjonsmenyen og skjuler menyikoner */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .fa-store, .fa-cart-shopping, .fa-circle-question {
+        display: none;
+    }
+
+    #about {
+        display: none;
+    }
+
+    #about-desktop {
+        display: flex;
+        background-color: #efefef;
+        padding: 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center
+    }
+
+    #cart-desktop img {
+        width: auto;
+    }
+
+    header nav a {
+        color: inherit;
+    }
+
+    #cart {
+        display:none;
+    }
+
+    #cart-desktop {
+        display: flex;
+        flex-direction: row;
+        background-color: #efefef;
+        padding: 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        border: solid;
+        border-color: black;
+    }
+
+    section .sko {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1;
+        border: solid;
+        border-color: black;
+        padding: 2.5%;
+    }
+
+    section .sko button {
+        color: black;
+        background-color: rgb(255, 55, 55);
+        padding: 4%;
+    }
+
+    section .betal {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1;
+        padding-left: 40px;
+    }
+
+    section .betal button {
+        color: black;
+        background-color: rgb(255, 162, 55);
+    }
+
+    #cart-desktop h1 {
+        text-decoration: underline;
+    }
+
+    /* Gjør flex-seksjoner som viser bilder og tekst ved siden av hverandre med mellomrom */
+    .flex-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Reduserer bildenes bredde til 50% i flex-seksjoner */
+    .flex-section img {
+        width: 50%;
+    }
+
+    /* Legger til litt mellomrom og justering i flex-seksjoner */
+    .flex-section section {
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    /* Endrer rekkefølgen av bilde og tekst i høyrejusterte seksjoner */
+    .right img {
+        order: 1;
+    }
+}
+
+
+/*
+
+
+<div id="topnav">
+    <!-- Ikon for store -->
+    <i class="fa-solid fa-store"></i>
+    <!-- Ikon for handlekurv -->
+    <i class="fa-solid fa-cart-shopping"></i>
+    <!-- Ikon for om oss -->
+    <i class="fa-sharp fa-regular fa-circle-question"></i>
+</div>
+
+                */
